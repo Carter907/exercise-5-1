@@ -1,7 +1,11 @@
 using System;
-
+using System.Linq;
+// Now, modify the program to use arrays to store the salesperson names, allowed initials, and accumulated sales values.
 class Program {
   public static void Main(string[] args) {
+    var allowedInitials = new char[] {'d', 'e', 'f'};
+    
+
     Console.Write("salesperson: ");
     var salesperson = Console.ReadLine().ToLower();
     var highestSale = 0;
