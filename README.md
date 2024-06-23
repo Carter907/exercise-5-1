@@ -44,7 +44,7 @@ BEGIN
 				VAR salesperson = TO LOWER CASE(PROMPT USER("salesperson: "))
 				salesIndex++;
 				peopleIndex++;
-			}
+			
 				    
 		        PRINT FORMAT
 			   - "Grand Total: {CURRENCY FORMAT: grandTotal}"
