@@ -7,8 +7,9 @@ class Program
   {
     var allowedInitials = new char[] { 'd', 'e', 'f' };
     var salesPeople = new char[3];
+    var peopleIndex = 0;
     var accumulatedSales = new int[3];
-
+    var salesIndex = 0;
 
     Console.Write("salesperson: ");
     var salesperson = Convert.ToChar(Console.ReadLine().ToLower());
@@ -27,6 +28,8 @@ class Program
           isAllowed = true;
           Console.Write("sale: ");
           var sale = Convert.ToInt32(Console.ReadLine());
+          accumulatedSales[salesIndex] = sale;
+          salesPeople[peopleIndex] = salesperson; 
           grandTotal += sale;
           if (sale > highestSale)
           {
@@ -43,6 +46,8 @@ class Program
 
       Console.Write("salesperson: ");
       salesperson = Convert.ToChar(Console.ReadLine().ToLower());
+      salesIndex++;
+      peopleIndex++;
     }
 
 
